@@ -1,0 +1,365 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE form [
+<!ENTITY one2ten "
+<choice>1</choice> 
+<choice>2</choice>
+<choice>3</choice>
+<choice>4</choice> 
+<choice>5</choice> 
+<choice>6</choice>
+<choice>7</choice> 
+<choice>8</choice> 
+<choice>9</choice> 
+<choice>10</choice>   
+ ">
+<!ENTITY language "
+<choice>ActionScript</choice>
+<choice>C</choice>
+<choice>C#</choice>
+<choice>C++</choice>
+<choice>Common Lisp</choice>
+<choice>CSS</choice>
+<choice>Diff</choice>
+<choice>Emacs Lisp</choice>
+<choice>Erlang</choice>
+<choice>Haskell</choice>
+<choice>Java</choice>
+<choice>JavaScript</choice>
+<choice>Lua</choice>
+<choice>Objective-C</choice>
+<choice>Perl</choice>
+<choice>PHP</choice>
+<choice>Python</choice>
+<choice>Ruby</choice>
+<choice>Scala</choice>
+<choice>Scheme</choice>
+<choice>XML</choice>
+">
+<!ENTITY region "
+<choice>Africa</choice>
+<choice>Europe</choice>
+ ">
+]>
+<form>
+  <title>The Bioinformatics Survey 2011</title>
+  <description>The Bioinformatics Survey 2011</description>
+  <section>
+    <title>About you</title>
+    <list required="true">
+      <title>Your gender</title>
+      <choice>XX</choice>
+      <choice>XY</choice>
+      <choice>Other</choice>
+    </list>
+    <text>
+      <title>Your mail</title>
+    </text>
+    <text>
+      <title>Twitter ID</title>
+    </text>
+    <text>
+      <title>Personnal webpage URL</title>
+    </text>
+    <text>
+      <title>Laboratory URL</title>
+    </text>
+    <list required="true">
+      <title>Did you participate in the 2008 career survey ?</title>
+      <choice>Yes</choice>
+      <choice>No</choice>
+      <choice>I don't remember</choice>
+    </list>
+  </section>
+  <section>
+    <title>Your Location</title>
+    <list>
+      <title>Which region of the world is your nationality?</title>
+      &region;
+    </list>
+    <text>
+      <title>Can you please copy and paste the google-map URL to your laboratory ?</title>
+    </text>
+    <list><title>Which region of the world do you currently work in? </title>
+	&region;
+</list>
+    <list><title>Which region of the world do you like to work in?</title>
+	&region;
+</list>
+    <integer>
+      <title>How many years of is the total of your under-graduate and graduate education?</title>
+    </integer>
+    <list>
+      <title> What field did you do the majority of your undergraduate degree in?</title>
+      <choice>Biology</choice>
+      <choice>Computing Science</choice>
+      <choice>Mathematics</choice>
+      <choice>Statistics</choice>
+      <choice>NOTE: Needs more here</choice>
+    </list>
+    <list>
+      <title> To which level do you complete your education?</title>
+      <choice>School</choice>
+      <choice>Undergraduate</choice>
+      <choice>Masters</choice>
+      <choice>PhD</choice>
+    </list>
+  </section>
+  <section><title>Grants and Publications</title><integer><title>How many papers have you been an author on?</title></integer><integer><title>How many papers have you been either first or last author?</title></integer>
+
+  - How important is open access to you?
+    - 1..10
+<integer><title>How many grants have you written?</title></integer>
+<integer><title>How many grants have you written and received?</title></integer>
+<list><title>What is the largest grant you have written and recieved (US Dollars)?</title><choice>&lt; $1000</choice><choice>&lt; $10,000</choice><choice>&lt; $100,000</choice><choice>&lt; $1,000,000</choice><choice>&gt; $1,000,000</choice></list>
+</section>
+  <section>
+    <title>Your Job</title>
+    <list>
+      <title>What is your current position?</title>
+      <choice>Under-graduate</choice>
+      <choice>Masters Student</choice>
+      <choice>PhD Student</choice>
+      <choice>Research Technician</choice>
+      <choice>Post Doctoral Fellow</choice>
+      <choice>Associate Professor/Lecturer</choice>
+      <choice>Assistant Professor/Reader</choice>
+      <choice>Professor</choice>
+    </list>
+    <list><title>How much do you enjoy your current job</title>
+    &one2ten;
+</list>
+    <list><title>How much do you have you enjoyed you career in bioinformatics?</title>
+    &one2ten;
+</list>
+    <list><title>How many more years do you see yourself in your current position?</title>
+    &one2ten;
+</list>
+    <list><title>How many more years do you see working in your current career?</title>
+  &one2ten;
+ </list>
+    <text>
+      <title>How many years have you been working since finishing education?</title>
+    </text>
+    <text>
+      <title>How many times a year do you attend external non-training workshops and
+    conferences?</title>
+    </text>
+    <text>
+      <title>How many times a year do you attend external training workshops and
+    conferences?</title>
+    </text>
+    <list>
+      <title>Which sector do you work in?</title>
+      <choice>Academia</choice>
+      <choice>Industry</choice>
+      <choice>Government</choice>
+      <choice>Freelance</choice>
+    </list>
+    <list>
+      <title>What field of bioinformatics do you work in/research?</title>
+      <choice>Acarology</choice>
+      <choice>Anatomy / Morphology</choice>
+      <choice>Arachnology</choice>
+      <choice>Astrobiology</choice>
+      <choice>Biochemistry</choice>
+      <choice>Bioinformatics</choice>
+      <choice>Biophysics</choice>
+      <choice>Botany</choice>
+      <choice>Bryology</choice>
+      <choice>Cell biology / Cytology</choice>
+      <choice>Cetology</choice>
+      <choice>Cladistics</choice>
+      <choice>Conservation Biology</choice>
+      <choice>Developmental biology</choice>
+      <choice>Ecology</choice>
+      <choice>Embryology</choice>
+      <choice>Entomology</choice>
+      <choice>Epidemiology</choice>
+      <choice>Ethology</choice>
+      <choice>Evolutionary developmental biology</choice>
+      <choice>Evolution/Evolutionary biology</choice>
+      <choice>Genetics</choice>
+      <choice>Genomics</choice>
+      <choice>Gerontology</choice>
+      <choice>Helminthology</choice>
+      <choice>Herpetology</choice>
+      <choice>Histology</choice>
+      <choice>HistoSystematics</choice>
+      <choice>Ichthyology</choice>
+      <choice>Immunology</choice>
+      <choice>Kinesiology</choice>
+      <choice>Lichenology</choice>
+      <choice>Malacology</choice>
+      <choice>Mammology</choice>
+      <choice>Microbiology/Bacteriology</choice>
+      <choice>Molecular Biology</choice>
+      <choice>Mycology</choice>
+      <choice>Myrmecology</choice>
+      <choice>Nematology</choice>
+      <choice>Neuroscience</choice>
+      <choice>Ornithology</choice>
+      <choice>Palynology</choice>
+      <choice>Phycology </choice>
+      <choice>Phylogeny</choice>
+      <choice>Physical anthropology</choice>
+      <choice>Physiology</choice>
+      <choice>Population genetics</choice>
+      <choice>Proteomics</choice>
+      <choice>Structural biology</choice>
+      <choice>Taxonomy</choice>
+      <choice>Virology</choice>
+    </list>
+    <text>
+      <title> Are you expected to regularly perform IT tasks? (e.g. Fix printer problems,
+    problems with computers other than your own.)</title>
+    </text>
+  </section>
+  <section>
+    <title>Your setup</title>
+    <text>
+      <title>What is total surface area of your monitor(s) screen?</title>
+    </text>
+    <text>
+      <title>How many Ghz does your computer run at?</title>
+    </text>
+    <text>
+      <title>How much RAM does your computer have?</title>
+    </text>
+    <list>
+      <title>Which operating system do you use?</title>
+      <choice>Windows</choice>
+      <choice>OSX</choice>
+      <choice>Linux</choice>
+      <choice>Other</choice>
+    </list>
+    <list><title>Which programming languages do you know? For instance: You write the basic smith-watermann alignment algorithm?</title>
+	&language;
+</list>
+    <list multiple="true"><title>What programming languages do you use daily?</title>
+	&language;
+</list>
+    <list multiple="true"><title>What programming languages do you master ?</title>
+    &language;
+</list>
+    <list multiple="true"><title>What programming languages would you like to learn?</title>
+    &language;
+</list>
+    <list multiple="true">
+      <title>Which editor do you mainly use for writing code?</title>
+      <choice>emacs</choice>
+      <choice>vi</choice>
+      <choice>nano</choice>
+      <choice>eclipse</choice>
+    </list>
+    <list multiple="true">
+      <title>Which version control system do you use?</title>
+      <choice>none</choice>
+      <choice>svn</choice>
+      <choice>git</choice>
+      <choice>mercurial</choice>
+      <choice>bazaar</choice>
+    </list>
+    <text>
+      <title>Dotfiles: paste the output of `ls -al ~/` into this box</title>
+    </text>
+    <text>
+      <title>How important is open-sourcing your software?</title>
+    </text>
+    <table>
+      <title>do you use the following web sites </title>
+      <column>never</column>
+      <column>often</column>
+      <column>I din't know</column>
+      <row>stackoverflow.com</row>
+      <row>biostar</row>
+      <row>seqanswers.com</row>
+      <row>other...</row>
+    </table>
+    <text>
+      <title>have you ever edited an article in wikipedia in your field of interest ?</title>
+    </text>
+    <text>
+      <title>Employment status</title>
+    </text>
+    <text>
+      <title>Relevance of your bioinformatics job role to your studies</title>
+    </text>
+    <text>
+      <title>How many months after finishing higher education did it take you to find a job in bioinformatics</title>
+    </text>
+    <list>
+      <title>How do you perform your day-to-day computing</title>
+      <choice>Cluster / HPC maintained by lab</choice>
+      <choice>Cluster / HPC maintained by University/Institute/Company</choice>
+      <choice>Cloud (Amazon / Private / SDSC etc.)</choice>
+    </list>
+    <list>
+      <title>Where do you work </title>
+      <choice>Industry</choice>
+      <choice>Bioinformatics research lab</choice>
+      <choice>Bioinformatics core in a University/Research institute</choice>
+      <choice>Biology/Clinical lab</choice>
+    </list>
+    <list>
+      <title>Does your group make use of any of the following technologies to support software development</title>
+      <choice>version control</choice>
+      <choice>issue tracking</choice>
+      <choice>wikis &amp; google doc</choice>
+      <choice>software mgment system</choice>
+    </list>
+    <text>
+      <title>Is there a project manager in your group, apart from the group leader?</title>
+    </text>
+    <text>
+      <title>How frequently do you meet with your group leader each week, to plan what to program and what to implement?</title>
+    </text>
+    <text>
+      <title>And how frequently do you meet with your group leader each week, to discuss how to implement what is planned?</title>
+    </text>
+    <text>
+      <title>From which background does your group leader comes from? Is he a biologist or a computer scientist?</title>
+    </text>
+    <text>
+      <title>Is your group leader able to help you on programming problems in case you need?</title>
+    </text>
+    <text>
+      <title>Do you have systematic Code Reviews in your group? Is there anyone in charge of reviewing the code before submitting a paper?</title>
+    </text>
+    <text>
+      <title>Are you the only person in charge of your code, or is the code ownership shared among the members of the lab? How frequently do you use code written by your labmates?</title>
+    </text>
+    <text>
+      <title>Do you adopt any agile programming technique in your group?</title>
+    </text>
+    <text>
+      <title>Do you make use of open source libraries, such as BioPython, BioPerl, BioConductor, etc?</title>
+    </text>
+    <text>
+      <title>Where do you look for help about technical/programming issues? (e.g. Biostar...)</title>
+    </text>
+    <text>
+      <title>Do you have a blog, where you discuss about your research?</title>
+    </text>
+    <text>
+      <title>Do you use twitter/facebook/google+/etc.. for your research?</title>
+    </text>
+    <text>
+      <title>Level of freedom with IT resource (1-5).</title>
+    </text>
+    <text>
+      <title>Journals: Which do you read?</title>
+    </text>
+    <text>
+      <title>Have you in the last X years served as reviewer, editor, etc of any journal?</title>
+    </text>
+    <text>
+      <title>Do you belong to any professional society?</title>
+    </text>
+    <text>
+      <title>How many times a year are you permitted to attend conferences?</title>
+    </text>
+    <text>
+      <title>How many times per year do you receive external training in topics relevant to your role?</title>
+    </text>
+  </section>
+</form>
