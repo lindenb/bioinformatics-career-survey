@@ -36,8 +36,28 @@
 <choice>XML</choice>
 ">
 <!ENTITY region "
-<choice>Africa</choice>
-<choice>Europe</choice>
+<choice>Prefer not to say</choice>
+<choice>Africa, North</choice>
+<choice>Africa, Eastern</choice>
+<choice>Africa, Middle</choice>
+<choice>Africa, Northern</choice>
+<choice>Africa, Southern</choice>
+<choice>Africa, Western</choice>
+<choice>America, Northern</choice>
+<choice>America, Central</choice>
+<choice>America, Caribbean</choice>
+<choice>America, South</choice>
+<choice>Asia, Southern</choice>
+<choice>Asia, Southern-Eastern</choice>
+<choice>Asia, Western</choice>
+<choice>Europe, Eastern</choice>
+<choice>Europe, Northern</choice>
+<choice>Europe, Southern</choice>
+<choice>Europe, Western</choice>
+<choice>Oceania, Australia and New Zealand</choice>
+<choice>Oceania, Melanesia</choice>
+<choice>Oceania, Micronesia</choice>
+<choice>Oceania, Polynesia</choice>
  ">
 ]>
 <form>
