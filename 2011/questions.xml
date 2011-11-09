@@ -175,59 +175,186 @@
       <choice>Government</choice>
       <choice>Freelance</choice>
     </list>
-    <list>
+    <list multiple="true">
       <title>What field of bioinformatics do you work in/research?</title>
-      <choice>Acarology</choice>
-      <choice>Anatomy / Morphology</choice>
-      <choice>Arachnology</choice>
-      <choice>Astrobiology</choice>
-      <choice>Biochemistry</choice>
-      <choice>Bioinformatics</choice>
-      <choice>Biophysics</choice>
-      <choice>Botany</choice>
-      <choice>Bryology</choice>
-      <choice>Cell biology / Cytology</choice>
-      <choice>Cetology</choice>
-      <choice>Cladistics</choice>
-      <choice>Conservation Biology</choice>
-      <choice>Developmental biology</choice>
-      <choice>Ecology</choice>
-      <choice>Embryology</choice>
-      <choice>Entomology</choice>
-      <choice>Epidemiology</choice>
-      <choice>Ethology</choice>
-      <choice>Evolutionary developmental biology</choice>
-      <choice>Evolution/Evolutionary biology</choice>
-      <choice>Genetics</choice>
-      <choice>Genomics</choice>
-      <choice>Gerontology</choice>
-      <choice>Helminthology</choice>
-      <choice>Herpetology</choice>
-      <choice>Histology</choice>
-      <choice>HistoSystematics</choice>
-      <choice>Ichthyology</choice>
-      <choice>Immunology</choice>
-      <choice>Kinesiology</choice>
-      <choice>Lichenology</choice>
-      <choice>Malacology</choice>
-      <choice>Mammology</choice>
-      <choice>Microbiology/Bacteriology</choice>
-      <choice>Molecular Biology</choice>
-      <choice>Mycology</choice>
-      <choice>Myrmecology</choice>
-      <choice>Nematology</choice>
-      <choice>Neuroscience</choice>
-      <choice>Ornithology</choice>
-      <choice>Palynology</choice>
-      <choice>Phycology </choice>
-      <choice>Phylogeny</choice>
-      <choice>Physical anthropology</choice>
-      <choice>Physiology</choice>
-      <choice>Population genetics</choice>
-      <choice>Proteomics</choice>
-      <choice>Structural biology</choice>
-      <choice>Taxonomy</choice>
-      <choice>Virology</choice>
+      <!-- form the EDAM ontology : http://sourceforge.net/projects/edamontology/ -->
+		<choice>Ab initio structure prediction</choice>
+		<choice>Alignment</choice>
+		<choice>Annotation</choice>
+		<choice>Biological model analysis</choice>
+		<choice>Biological model construction</choice>
+		<choice>Biostatistics </choice>
+		<choice>Carbohydrates</choice>
+		<choice>Chemoinformatics</choice>
+		<choice>Codon usage</choice>
+		<choice>Comparative genomics</choice>
+		<choice>Database and file management</choice>
+		<choice>Database submission</choice>
+		<choice>Data indexing</choice>
+		<choice>Datatypes, workflows and data handling</choice>
+		<choice>DNA</choice>
+		<choice>DNA microarray probes</choice>
+		<choice>DNA microarrays</choice>
+		<choice>Drug design</choice>
+		<choice>Enzymes</choice>
+		<choice>EST and cDNA</choice>
+		<choice>Expression and functional profiling</choice>
+		<choice>File format handling</choice>
+		<choice>Functional genomics</choice>
+		<choice>Functional RNA</choice>
+		<choice>Gene expression</choice>
+		<choice>Gene finding</choice>
+		<choice>Gene regulation</choice>
+		<choice>Genetic mapping</choice>
+		<choice>Genome annotation</choice>
+		<choice>Genomics</choice>
+		<choice>G protein-coupled receptors (GPCR)</choice>
+		<choice>Health and disease</choice>
+		<choice>Homology modelling</choice>
+		<choice>Immunology</choice>
+		<choice>Lipids</choice>
+		<choice>Lipoproteins</choice>
+		<choice>Literature and documentation</choice>
+		<choice>Literature search</choice>
+		<choice>Mass spectrometry</choice>
+		<choice>Metabolites</choice>
+		<choice>Microarrays</choice>
+		<choice>microRNA</choice>
+		<choice>Model organisms</choice>
+		<choice>Model organisms (fish)</choice>
+		<choice>Model organisms (fly)</choice>
+		<choice>Model organisms (microbes)</choice>
+		<choice>Model organisms (mouse and rat)</choice>
+		<choice>Model organisms (plants)</choice>
+		<choice>Model organisms (worm)</choice>
+		<choice>Model organisms (yeast)</choice>
+		<choice>Molecular dynamics</choice>
+		<choice>Molecular modelling</choice>
+		<choice>Multiple sequence alignment</choice>
+		<choice>Multiple structure alignment</choice>
+		<choice>Mutation and polymorphism</choice>
+		<choice>Nucleic acid denaturation</choice>
+		<choice>Nucleic acid features</choice>
+		<choice>Nucleic acid folding</choice>
+		<choice>Nucleic acid physicochemistry</choice>
+		<choice>Nucleic acid restriction</choice>
+		<choice>Nucleic acids</choice>
+		<choice>Nucleic acid sequence analysis</choice>
+		<choice>Nucleic acid sequence comparison</choice>
+		<choice>Nucleic acid sequence features</choice>
+		<choice>Nucleic acid sequence motifs</choice>
+		<choice>Nucleic acid structural features</choice>
+		<choice>Nucleic acid structure analysis</choice>
+		<choice>Nucleic acid structure comparison</choice>
+		<choice>Nucleic acid structure prediction</choice>
+		<choice>Ontologies</choice>
+		<choice>Ontology annotation</choice>
+		<choice>Ontology lookup</choice>
+		<choice>Pairwise sequence alignment</choice>
+		<choice>Pairwise structure alignment</choice>
+		<choice>Pathways and networks</choice>
+		<choice>Pathway search and retrieval</choice>
+		<choice>Pharmacogenomics</choice>
+		<choice>Pharmacology</choice>
+		<choice>Phylogenetic clocks, dating and stratigraphy</choice>
+		<choice>Phylogenetics</choice>
+		<choice>Phylogenetic simulation</choice>
+		<choice>Phylogenomics</choice>
+		<choice>Phylogeny reconstruction</choice>
+		<choice>Phylogeny visualisation</choice>
+		<choice>piRNA</choice>
+		<choice>Plotting, rendering and visualisation</choice>
+		<choice>Polymerase chain reaction</choice>
+		<choice>Promoters</choice>
+		<choice>Protein classification</choice>
+		<choice>Protein docking</choice>
+		<choice>Protein domains</choice>
+		<choice>Protein features</choice>
+		<choice>Protein flexibility and motion</choice>
+		<choice>Protein folding, stability and design</choice>
+		<choice>Protein fold recognition</choice>
+		<choice>Protein function</choice>
+		<choice>Protein function prediction</choice>
+		<choice>Protein hydropathy</choice>
+		<choice>Protein interactions</choice>
+		<choice>Protein-ligand interactions</choice>
+		<choice>Protein microarrays</choice>
+		<choice>Protein-nucleic acid interactions</choice>
+		<choice>Protein physicochemistry</choice>
+		<choice>Protein post-translation modification</choice>
+		<choice>Protein-protein interactions</choice>
+		<choice>Protein rational design</choice>
+		<choice>Protein residue interactions</choice>
+		<choice>Proteins</choice>
+		<choice>Protein secondary structure analysis</choice>
+		<choice>Protein secondary structure prediction</choice>
+		<choice>Protein sequence analysis</choice>
+		<choice>Protein sequence comparison</choice>
+		<choice>Protein sequence features</choice>
+		<choice>Protein sequence motifs</choice>
+		<choice>Protein structural features</choice>
+		<choice>Protein structural motifs</choice>
+		<choice>Protein structure analysis</choice>
+		<choice>Protein structure comparison</choice>
+		<choice>Protein structure prediction</choice>
+		<choice>Protein surfaces</choice>
+		<choice>Protein targeting</choice>
+		<choice>Protein tertiary structure analysis</choice>
+		<choice>Protein tertiary structure prediction</choice>
+		<choice>Proteolysis and peptide mass</choice>
+		<choice>Proteomics</choice>
+		<choice>Raw structural data analysis</choice>
+		<choice>Repeat sequences</choice>
+		<choice>Report processing</choice>
+		<choice>RNA</choice>
+		<choice>RNA splicing</choice>
+		<choice>RNA structure prediction</choice>
+		<choice>rRNA</choice>
+		<choice>Search and retrieval</choice>
+		<choice>Secondary structure comparison</choice>
+		<choice>Sequence alignment</choice>
+		<choice>Sequence alignment analysis</choice>
+		<choice>Sequence analysis</choice>
+		<choice>Sequence annotation</choice>
+		<choice>Sequence assembly</choice>
+		<choice>Sequence clustering</choice>
+		<choice>Sequence comparison</choice>
+		<choice>Sequence complexity</choice>
+		<choice>Sequence composition</choice>
+		<choice>Sequence editing</choice>
+		<choice>Sequence features</choice>
+		<choice>Sequence motifs</choice>
+		<choice>Sequence profile alignment</choice>
+		<choice>Sequence profiles and HMMs</choice>
+		<choice>Sequence search and retrieval</choice>
+		<choice>Sequence similarity search</choice>
+		<choice>Sequence-structure alignment</choice>
+		<choice>Sequencing and mapping</choice>
+		<choice>siRNA</choice>
+		<choice>Small molecules</choice>
+		<choice>snoRNA</choice>
+		<choice>SNPs</choice>
+		<choice>Structural (3D) profiles</choice>
+		<choice>Structural features and motifs</choice>
+		<choice>Structural genomics</choice>
+		<choice>Structure alignment</choice>
+		<choice>Structure alignment analysis</choice>
+		<choice>Structure analysis</choice>
+		<choice>Structure-based sequence alignment</choice>
+		<choice>Structure comparison</choice>
+		<choice>Structure prediction</choice>
+		<choice>Structure search and retrieval</choice>
+		<choice>Structure similarity search</choice>
+		<choice>Systems biology and modelling</choice>
+		<choice>Tertiary structure comparison</choice>
+		<choice>Tertiary structure prediction</choice>
+		<choice>Text mining</choice>
+		<choice>Transcription and translation</choice>
+		<choice>Transcription regulation</choice>
+		<choice>Transmembrane protein prediction</choice>
+		<choice>Transmembrane proteins</choice>
+		<choice>tRNA</choice>
+		<choice>Two-dimensional gel electrophoresis</choice>
     </list>
     <text>
       <title> Are you expected to regularly perform IT tasks? (e.g. Fix printer problems,
@@ -279,10 +406,10 @@
       <choice>mercurial</choice>
       <choice>bazaar</choice>
     </list>
-    <text>
+    <text multiline="true">
       <title>Dotfiles: paste the output of `ls -al ~/` into this box</title>
     </text>
-    <text>
+    <text multiline="true">
       <title>How important is open-sourcing your software?</title>
     </text>
     <table>

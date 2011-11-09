@@ -52,7 +52,16 @@ label	{
 
 <xsl:template match="text">
 <dt><xsl:value-of select="title"/></dt>
-<dd><input type="text"/></dd>
+<dd>
+<xsl:choose>
+<xsl:when test="@multiline='true'">
+<textarea rows="5" cols="80"></textarea>
+</xsl:when>
+<xsl:otherwise>
+<input type="text"/>
+</xsl:otherwise>
+</xsl:choose>
+</dd>
 </xsl:template>
 
 <xsl:template match="integer">
@@ -63,18 +72,33 @@ label	{
 
 <xsl:template match="list">
 <dt><xsl:value-of select="title"/></dt>
-<xsl:apply-templates select="choice"/>
+<xsl:apply-templates select="choice" />
 </xsl:template>
 
 
 <xsl:template match="choice">
 <dd>
-	<input type="checkbox"/>
+	<xsl:element name="input">
+		<xsl:attribute name="type">
+		<xsl:choose>
+			<xsl:when test="../@multiple='true'">checkbox</xsl:when>
+			<xsl:otherwise>radio</xsl:otherwise>
+		</xsl:choose>
+		</xsl:attribute>
+		<xsl:attribute name="name"><xsl:value-of select="generate-id(..)"/></xsl:attribute>
+		<xsl:attribute name="id"><xsl:value-of select="generate-id(.)"/></xsl:attribute>
+		<xsl:attribute name="value"><xsl:value-of select="."/></xsl:attribute>
+	</xsl:element>
 	<xsl:text> </xsl:text>
-	<label><xsl:value-of select="."/></label>
+	<xsl:element name="label">
+	<xsl:attribute name="for"><xsl:value-of select="generate-id(.)"/></xsl:attribute>
+	<xsl:value-of select="."/>
+	</xsl:element>
 	
 </dd>
 </xsl:template>
+
+
 
 <xsl:template match="table">
 <dt><xsl:value-of select="title"/></dt>
