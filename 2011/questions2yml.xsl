@@ -8,11 +8,11 @@
 </xsl:template>
 
 <xsl:template match="form|section">
-<xsl:apply-templates select="list|text|section"/>
+<xsl:apply-templates select="list|text|section|table"/>
 </xsl:template>
 
 
-<xsl:template match="title|text">
+<xsl:template match="title|text|integer">
 <xsl:text>
 </xsl:text>
 <xsl:text>  - </xsl:text>
@@ -22,8 +22,6 @@
 </xsl:template>
 
 <xsl:template match="list">
-<xsl:text>
-</xsl:text>
 <xsl:apply-templates select="title"/>
 <xsl:apply-templates select="choice"/>
 </xsl:template>
@@ -36,5 +34,19 @@
 </xsl:text>
 </xsl:template>
 
+<xsl:template match="table">
+<xsl:apply-templates select="title"/>
+<xsl:for-each select="row">
+<xsl:text>
+  - </xsl:text>
+ <xsl:value-of select="normalize-space(.)"/>
+<xsl:text> [</xsl:text>
+<xsl:for-each select="../column">
+	 <xsl:text>	</xsl:text>
+	 <xsl:value-of select="normalize-space(.)"/>
+</xsl:for-each>
+<xsl:text>]</xsl:text>
+</xsl:for-each>
+</xsl:template>
 
 </xsl:stylesheet>
