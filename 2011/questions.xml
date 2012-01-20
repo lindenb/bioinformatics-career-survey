@@ -17,6 +17,7 @@
 <choice>C</choice>
 <choice>C#</choice>
 <choice>C++</choice>
+<choice>Clojure</choice>
 <choice>Common Lisp</choice>
 <choice>CSS</choice>
 <choice>Diff</choice>
@@ -78,6 +79,9 @@
       <title>Twitter ID</title>
     </text>
     <text>
+      <title>Wikipedia username</title>
+    </text>
+    <text>
       <title>Personnal webpage URL</title>
     </text>
     <text>
@@ -124,14 +128,36 @@
       <choice>PhD</choice>
     </list>
   </section>
-  <section><title>Grants and Publications</title><integer><title>How many papers have you been an author on?</title></integer><integer><title>How many papers have you been either first or last author?</title></integer>
+  <section>
+    <title>Grants and Publications</title>
+    <integer>
+      <title>How many papers have you been an author on?</title>
+    </integer>
+    <integer>
+      <title>How many papers have you been either first or last author?</title>
+    </integer>
 
-  - How important is open access to you?
-    - 1..10
-<integer><title>How many grants have you written?</title></integer>
-<integer><title>How many grants have you written and received?</title></integer>
-<list><title>What is the largest grant you have written and recieved (US Dollars)?</title><choice>&lt; $1000</choice><choice>&lt; $10,000</choice><choice>&lt; $100,000</choice><choice>&lt; $1,000,000</choice><choice>&gt; $1,000,000</choice></list>
-</section>
+    <list>
+      <title>How important is open access to you?</title>
+      &one2ten;
+    </list>
+    <integer>
+      <title>How many grants have you written?</title>
+    </integer>
+    <integer>
+      <title>How many grants have you written and received?</title>
+    </integer>
+    <list>
+      <title>What is the largest grant you have written and recieved (US
+      Dollars)?</title>
+      <choice>Have not recieved a grant</choice>
+      <choice>&lt; $1000</choice>
+      <choice>&lt; $10,000</choice>
+      <choice>&lt; $100,000</choice>
+      <choice>&lt; $1,000,000</choice>
+      <choice>&gt; $1,000,000</choice>
+    </list>
+  </section>
   <section>
     <title>Your Job</title>
     <list>
@@ -370,16 +396,19 @@
       <title>How many Ghz does your computer run at?</title>
     </text>
     <text>
+      <title>How many cores does your computer have?</title>
+    </text>
+    <text>
       <title>How much RAM does your computer have?</title>
     </text>
     <list>
-      <title>Which operating system do you use?</title>
+      <title>Which operating system do you use most often?</title>
       <choice>Windows</choice>
       <choice>OSX</choice>
       <choice>Linux</choice>
       <choice>Other</choice>
     </list>
-    <list><title>Which programming languages do you know? For instance: You write the basic smith-watermann alignment algorithm?</title>
+    <list><title>Which programming languages do you know? For instance: Languages in which you could write the basic smith-watermann alignment algorithm.</title>
 	&language;
 </list>
     <list multiple="true"><title>What programming languages do you use daily?</title>
@@ -397,6 +426,8 @@
       <choice>vi</choice>
       <choice>nano</choice>
       <choice>eclipse</choice>
+      <choice>netbeans</choice>
+      <choice>other</choice>
     </list>
     <list multiple="true">
       <title>Which version control system do you use?</title>
@@ -423,7 +454,7 @@
       <row>other...</row>
     </table>
     <text>
-      <title>have you ever edited an article in wikipedia in your field of interest ?</title>
+      <title>Have you ever edited an article in wikipedia in your field of interest ?</title>
     </text>
     <text>
       <title>Employment status</title>
@@ -490,9 +521,10 @@
     <text>
       <title>Do you use twitter/facebook/google+/etc.. for your research?</title>
     </text>
-    <text>
-      <title>Level of freedom with IT resource (1-5).</title>
-    </text>
+    <list>
+      <title>Level of freedom with IT resources.</title>
+      &one2ten;
+    </list>
     <text>
       <title>Journals: Which do you read?</title>
     </text>
